@@ -7,6 +7,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
 public class HelloController {
+
+    String selectedBuilding = "";
+
     @FXML
     private Label welcomeText;
 
@@ -25,10 +28,11 @@ public class HelloController {
     private ImageView main;
 
     @FXML
-    void buisnessbtn(ActionEvent event) {
+    public void businessbtn() {
         buisness.setVisible(true);
         it.setVisible(false);
         main.setVisible(false);
+        selectedBuilding = "Business Building";
     }
 
     @FXML
@@ -36,6 +40,7 @@ public class HelloController {
         buisness.setVisible(false);
         it.setVisible(true);
         main.setVisible(false);
+        selectedBuilding = "IT Building";
     }
 
     @FXML
@@ -43,6 +48,7 @@ public class HelloController {
         buisness.setVisible(false);
         it.setVisible(false);
         main.setVisible(true);
+        selectedBuilding = "Main Building";
     }
 
 
@@ -74,5 +80,9 @@ public class HelloController {
         menuPn.setVisible(true);
         homePn.setVisible(false);
         searchPn.setVisible(false);
+    }
+
+    public String getSelectedBuilding() {
+        return selectedBuilding;
     }
 }

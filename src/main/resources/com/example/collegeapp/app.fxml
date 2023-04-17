@@ -45,7 +45,7 @@
             </ImageView>
             <Button layoutX="29.0" layoutY="281.0" mnemonicParsing="false" onAction="#mainbtn" text="Main Hall" />
             <Button layoutX="29.0" layoutY="361.0" mnemonicParsing="false" onAction="#itbtn" text="IT Building" />
-            <Button layoutX="29.0" layoutY="321.0" mnemonicParsing="false" onAction="#buisnessbtn" text="Buisness Building" />
+            <Button layoutX="29.0" layoutY="321.0" mnemonicParsing="false" onAction="#businessbtn" text="Buisness Building" />
             <ImageView fx:id="main" fitHeight="24.0" fitWidth="26.0" layoutX="137.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@images/vector-marker-flat-multi-color-icon-removebg-preview%20(1).png" />
