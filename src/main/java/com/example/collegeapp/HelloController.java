@@ -53,14 +53,26 @@ public class HelloController {
     private AnchorPane homePn;
 
     @FXML
+    private AnchorPane menuPn;
+
+    @FXML
     void search(ActionEvent event) {
         homePn.setVisible(false);
         searchPn.setVisible(true);
+        menuPn.setVisible(false);
     }
 
     @FXML
     void home(ActionEvent event) {
         homePn.setVisible(true);
+        searchPn.setVisible(false);
+        menuPn.setVisible(false);
+    }
+
+    @FXML
+    void menubtn(ActionEvent event) {
+        menuPn.setVisible(true);
+        homePn.setVisible(false);
         searchPn.setVisible(false);
     }
 }
